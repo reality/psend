@@ -1,13 +1,13 @@
-# psend - library for multiple communications
+## psend - library for multiple communications
 
-## Overview
+### Overview
 
 This library will be a modular system for allowing a standard interface for
 sending messages over multiple protocols.
 
-## Use Cases
+### Use Cases
 
-### Website User Model
+#### Website User Model
 
 On *Reality's Cool Service*, people can register accounts. When registering for
 an account they must provide a contact address. While traditionally this is
@@ -50,7 +50,7 @@ the type of message (e.g. newsletters). I'm thinking the best way to approach
 this is to hook into a web server the client software is using and simply send a
 link to a web page where the user can read their full message. 
 
-### Service Intercommunication Model
+#### Service Intercommunication Model
 
 In the case of a 'complicit' server which has been set up with psend support by
 implementing some form of virtual users, this library could be used to bridge 
