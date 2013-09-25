@@ -1,0 +1,22 @@
+{
+  "name": "psend",
+  "dependencies": {
+    "path": "~0.4.9",
+    "process": "~0.5.1",
+    "underscore": "~1.5.2"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "7a6df0a1e522df9233ca643c99cb73bdea765399",
+  "description": "### Overview",
+  "version": "0.0.0",
+  "main": "psend.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/reality/psend.git"
+  },
+  "license": "BSD"
+}
