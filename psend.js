@@ -50,10 +50,4 @@ var psend = function(pConfig) {
     };
 };
 
-var ps = psend({ 
-    'irc': {
-        'nick': 'idk',
-        'persistent': true
-    }
-});
-ps.send('irc://reality@irc.aberwiki.org', 'testing testing');
+module.exports = psend;
