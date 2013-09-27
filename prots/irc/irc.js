@@ -5,14 +5,12 @@ var irc = function(config) {
 
     return {
         'send': function(contact, message) {
-            var user = contact[2];
+            var user = contact[2],
                 server = contact[3];
 
-            // TODO: Make removeconnection in jsbot and such so can create
-            //   persistent connections to make this more efficient
             instance.addConnection(server, server, 6667, null, function(event) {
                 instance.say(server, user, message);
-                instance.disconnect(server);
+                instance.connections[server].send('QUIT');
             });
             instance.connect(server);
         }
