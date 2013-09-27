@@ -40,7 +40,7 @@ var psend = function(pConfig) {
 
     return {
         'send': function(uri, message) {
-            var contact = uri.match(/([a-zA-Z]+):\/\/([a-zA-Z]+)@([a-zA-Z0-9\.]+)/);
+            var contact = uri.match(/([a-zA-Z]+):\/\/([\d\w[\]{}^|\\`_-]+?)@([a-zA-Z0-9\.]+)/);
             if(contact && _.has(prots, contact[1])) {
                 prots[contact[1]].send(contact, message); 
             } else {
